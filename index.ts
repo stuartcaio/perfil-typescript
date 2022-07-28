@@ -19,6 +19,15 @@ class Aluno implements IAluno{
         this.idade = idade;
         this.profissão = profissão;
         this.temperamento = temperamento;
+
+        this.mostra();
+    }
+
+    mostra(){
+        console.log("Nome: " + this.nome + " " + this.sobrenome);
+        console.log("Idade: " + this.idade);
+        console.log("Profissão: " + this.profissão);
+        console.log("Temperamento: " + this.temperamento);
     }
 }
 

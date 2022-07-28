@@ -5,7 +5,14 @@ var Aluno = /** @class */ (function () {
         this.idade = idade;
         this.profissão = profissão;
         this.temperamento = temperamento;
+        this.mostra();
     }
+    Aluno.prototype.mostra = function () {
+        console.log("Nome: " + this.nome + " " + this.sobrenome);
+        console.log("Idade: " + this.idade);
+        console.log("Profissão: " + this.profissão);
+        console.log("Temperamento: " + this.temperamento);
+    };
     return Aluno;
 }());
 var aluno1 = new Aluno("Caio", "Stuart", 16, "Desenvolvedor Front-end", "Fleumático");
